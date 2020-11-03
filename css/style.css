@@ -1,0 +1,84 @@
+/* reset */
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.6rem sans-serif;
+    margin: 0;
+}
+h1,h2,h3,p,ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+*{
+    box-sizing: border-box;
+}
+*{
+    /* firefox */
+    scrollbar-width: thin;
+    scrollbar-color: #c01e0c #fff;
+}
+
+/* pour chrome */
+*::-webkit-scrollbar{
+    width: .2rem;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: #c01e0c;
+    outline: 0.1rem solid #fff;
+}
+
+/* theme */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #c01e0c;
+    
+}
+header h1{
+    text-align: center;
+    line-height: 6.0rem;
+    color: #fff;
+    font-weight: 100;
+}
+main{
+    border: solid 0.1rem #ccc;
+    max-width: 90rem;
+    margin: 9.0rem auto 1.0rem;
+    background-color: #fafafa;
+    overflow: hidden; /* masque */
+    padding: 1.0rem 0 0 1.0rem;
+    box-shadow: 0 0 1.0rem rgba(0,0,0,0.5);
+
+}
+main ul li img{
+    display: block;
+    width: 100%;
+}
+main ul li{
+    width: calc(100% / 4 - 1.0rem);/* pour calculer la largeur des éléments dans la grille */
+    float: left;
+    margin: 0 1.0rem 1.0rem 0;
+}
+main ul li:nth-of-type(9){
+    width: calc(100% / 1 - 1.0rem);
+    margin: 0 1.0rem 1.0rem 0;
+}
+main ul li:nth-of-type(10), main ul li:nth-of-type(11){
+    width: calc(100% / 2 - 1.0rem);
+    margin: 0 1.0rem 1.0rem 0;
+}
+footer details{
+    max-width: 60rem;
+    margin: 0  auto;
+}
+footer details summary, footer details p{
+    text-align: center;
+}
+footer details p{
+    font-size: small;
+    padding: .5rem;
+}
